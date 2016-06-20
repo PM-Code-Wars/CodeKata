@@ -1,8 +1,10 @@
-Description:
-Consider integer coordinates x, y in the Cartesian plan and three functions f, g, h defined by:
+** Description:
+*** Consider integer coordinates x, y in the Cartesian plan and three functions f, g, h defined by:
 
 f: 1 <= x <= n, 1 <= y <= n --> f(x, y) = min(x, y)   - this is used to populate the cartesian plane, if x is less than y, then x value is used for a cell, otherwise y
+
 g: 1 <= x <= n, 1 <= y <= n --> g(x, y) = max(x, y)   - opposite of g:	
+
 h: 1 <= x <= n, 1 <= y <= n --> h(x, y) = x + y       - f+g
 
 
@@ -10,7 +12,7 @@ where n is a given integer (n >= 1, guaranteed) and x, y are integers.
 
 In the table below you can see the value of the function f with n = 6.
 
----	0	1	2	3	4	5	6
+  0	1	2	3	4	5	6
 6	-	1	2	3	4	5	6	
 5	-	1	2	3	4	5	5	
 4	-	1	2	3	4	4	4	
