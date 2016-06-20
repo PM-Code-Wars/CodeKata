@@ -1,4 +1,4 @@
-** Codewars link:
+**Codewars link:
 https://www.codewars.com/kata/functions-of-integers-on-cartesian-plane
 
 Some hints:
