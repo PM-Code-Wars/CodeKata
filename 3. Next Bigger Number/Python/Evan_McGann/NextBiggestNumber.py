@@ -14,11 +14,7 @@ def next_bigger(n):
         if next_largest_index >= 0:
             digits[i] = next_largest_digit
             digits[next_largest_index] = curr_digit
-            
-            sorted_latter_digits = sorted([digits[k] for k in range(i + 1, len(digits))])
-            
-            for k in range(len(sorted_latter_digits)):
-                digits[i + 1 + k] = sorted_latter_digits[k]
+            digits = digits[0:i+1] + sorted(digits[i+1:len(digits)])
                 
             return int("".join([str(digit) for digit in digits]))
     
