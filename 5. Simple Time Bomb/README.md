@@ -1,5 +1,5 @@
 # Codewars link:
-http://www.codewars.com/kata/sum-of-intervals/train/javascript
+http://www.codewars.com/kata/simple-time-bomb
 
 
 
