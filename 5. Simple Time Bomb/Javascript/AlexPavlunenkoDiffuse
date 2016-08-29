@@ -1,0 +1,102 @@
+// Diffuse all of the Bombs!
+
+//console.log(Bomb.diffuse.toString());
+Bomb.diffuse( Bomb.key );
+
+console.log(Bomb);
+console.log(Bomb.diffuse.toString());
+
+for (var i = 0; i < 5; i++) {
+   console.log(Bomb.diffuse(i));
+}
+
+//console.log(Bomb);
+//console.log(Bomb.diffuse.toString());
+//console.log(global);
+
+Bomb.diffuse(BombKey);
+
+
+console.log(Bomb);
+console.log(Bomb.diffuse.toString());
+
+diffuseTheBomb = function () {
+  return true;
+}
+
+Bomb.diffuse(BombKey);
+
+console.log(Bomb);
+console.log(Bomb.diffuse.toString());
+
+Bomb.diffuse(3.14159);
+
+console.log(Bomb);
+console.log(Bomb.diffuse.toString());
+
+var d = new Date();
+Bomb.diffuse(d.setFullYear(d.getFullYear() -4));
+
+console.log(Bomb);
+console.log(Bomb.diffuse.toString());
+
+var code = {};
+Object.defineProperty( code, "key", {
+  value: 43,
+  writable: false
+});
+
+Bomb.diffuse(code);
+console.log(Bomb);
+console.log(Bomb.diffuse.toString());
+
+var code2 = {
+counter: 0,
+
+valueOf: function () {
+  if( this.counter === 0) {
+    this.counter++;
+    return 0;
+  } else {
+    return 11;
+  }
+}
+};
+
+Bomb.diffuse(code2);
+console.log(Bomb);
+console.log(Bomb.diffuse.toString());
+
+mathcounter = 0;
+
+Math.random = function () {
+  if(mathcounter < 2) {
+    mathcounter++;
+    return 1;
+  } else {
+    return 0.5;
+  }
+};
+Bomb.diffuse(42);
+console.log(Bomb);
+console.log(Bomb.diffuse.toString());
+
+console.log(new Buffer( 'WWVz=', 'base64' ).toString( 'ascii' ));
+
+
+mathcounter = 0;
+
+Array.prototype.toString = function () {
+  if(mathcounter < 2) {
+    mathcounter++;
+    return '';
+  } else {
+    return '42';
+  }
+}
+
+Bomb.diffuse('WWVz=');
+
+
+
+
